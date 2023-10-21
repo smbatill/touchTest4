@@ -7,6 +7,7 @@ function setup(){
 }
 
 function draw() {
+  background(255);
   textSize(25);
   fill(value);
   rect(175, 175, 50, 50);
