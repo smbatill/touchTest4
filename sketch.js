@@ -7,7 +7,9 @@ function setup(){
 }
 
 function draw() {
+  createCanvas(400,400);
   background(255);
+
   textSize(25);
   fill(value);
   rect(175, 175, 50, 50);
