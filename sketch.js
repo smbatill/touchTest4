@@ -7,11 +7,14 @@ function setup(){
 }
 
 function draw() {
-  textSize(15);
+  textSize(25);
   fill(value);
   rect(175, 175, 50, 50);
+  fill(0,0,255);
+  text('test',50,50);
 
-  if(touches.length > 0){
+
+  if(touches.length >= 0){
     text(touches.length,100,100);
 /*
     fill(255,0,0);
