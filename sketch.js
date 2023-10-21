@@ -12,7 +12,7 @@ function draw() {
   rect(175, 175, 50, 50);
 
   if(touches.length > 0){
-    text(touches.length,200,200);
+    text(touches.length,100,100);
 /*
     fill(255,0,0);
     rect(touches[0].x,touches[0].y,40,40);
