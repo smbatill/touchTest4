@@ -1,6 +1,6 @@
 
 let value = 0;
-tposX,tposY;
+let tposX,tposY;
 
 function setup(){
   createCanvas(400, 400);
@@ -17,7 +17,12 @@ function draw() {
   fill(0,0,255);
   text('test',50,50);
 
+  if(mouseIsPressed === true){
+    fill(255,0,0);
+    rect(mouseX,mouseY,20,20);
+  }
 
+/*
   if(touches.length >= 0){
     text(touches.length,100,100);
      tposX = touches.x[0];
@@ -30,10 +35,10 @@ function draw() {
      fill(0);
      text(touches.length,touches[i].x+20,touches[i].y+20);
     }
-*/
+
 
   }
-
+*/
 }
 
 function touchStarted() {
