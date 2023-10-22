@@ -22,7 +22,7 @@ function draw() {
 
 // mouseIsPressed stores the current mouse position when using OSX 
 // the computer touchpad operation is erratic not sure how it is set-up 
-// a "mouse press" is not a touch in iOS but a screen touch in iS appears 
+// a "mouse press" is not a touch in iOS but a screen touch in iOS appears 
 // to act like a mouse press as it stores in the mouseX and mouseY variables 
 // the location of the touch but it seemed to take almost a second between 
 // the touch on the screen and the screen response
@@ -48,7 +48,8 @@ function draw() {
 // in the touchStarted() function you can set variables you want to influence
 // with the touch - but these are not affected by a mouse press in OSX
 
-function touchStarted() {
+//function touchStarted() {
+function mousePressed(){ 
   if (value === 0) {
     value = 255;
   } else {
