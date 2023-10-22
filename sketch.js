@@ -1,6 +1,7 @@
 //
 // test sketch to sort out how to activate buttons and sliders in
-// sketches that can run on both computer/moust and smartphone/table devices
+// sketches that can run on both computer/mouse and 
+// smartphone/table/touch devices
 // as of 10/21/23
 
 
@@ -48,7 +49,14 @@ function draw() {
 // in the touchStarted() function you can set variables you want to influence
 // with the touch - but these are not affected by a mouse press in OSX
 
-//function touchStarted() {
+//Note: touchStarted is only recognized is using touch devides "duh"
+// but if you use mousePressed it works on both touch and mouse systems
+
+// The touchStarted() function is called once after every time a touch 
+// is registered. If no touchStarted() function is defined, 
+// the mousePressed() function will be called instead if it is defined.
+
+//function touchStarted() {    -> this could be used but see above
 function mousePressed(){ 
   if (value === 0) {
     value = 255;
@@ -57,6 +65,6 @@ function mousePressed(){
   }
 }
 
-// BOTTOM LINE: try to use mouseIsPressed to activate buttons and control
-// slider 
+// BOTTOM LINE: try to use mouseIsPressed and function mousePressed() 
+// to activate buttons and control slider 
 //
